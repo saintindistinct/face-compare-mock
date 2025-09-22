@@ -1,0 +1,83 @@
+<!-- <div class="wrap">
+  <h2>Face Match (Upload 2 Photos)</h2>
+
+  <div class="inputs">
+    <label class="picker">
+      <span>Image A</span>
+      <input type="file" accept="image/*" (change)="onFileA($event)" />
+    </label>
+    <label class="picker">
+      <span>Image B</span>
+      <input type="file" accept="image/*" (change)="onFileB($event)" />
+    </label>
+  </div>
+
+  <div class="previews">
+    <div class="pane" *ngIf="imgUrlA() as a">
+      <div class="stage">
+        <img #imgA [src]="a" alt="A" />
+        <canvas #canvasA></canvas>
+      </div>
+      <small>Preview A</small>
+    </div>
+
+    <div class="pane" *ngIf="imgUrlB() as b">
+      <div class="stage">
+        <img #imgB [src]="b" alt="B" />
+        <canvas #canvasB></canvas>
+      </div>
+      <small>Preview B</small>
+    </div>
+  </div>
+
+  <button class="go" (click)="compare()">Compare</button>
+
+  <div class="result" *ngIf="status() !== 'idle'">
+    <p>{{ message() }}</p>
+    <p *ngIf="distance() !== null">
+      Distance: {{ distance() | number : '1.3-3' }} (threshold {{ threshold }})
+    </p>
+  </div>
+</div> -->
+
+<div class="wrap">
+  <h2>Face Match (1 vs many)</h2>
+
+  <div class="inputs">
+    <label class="picker">
+      <span>Image A (Profile Picture)</span>
+      <input type="file" accept="image/*" (change)="onFileA($event)" />
+    </label>
+    <label class="picker">
+      <span>Image B (Group Picture)</span>
+      <input type="file" accept="image/*" (change)="onFileB($event)" />
+    </label>
+  </div>
+
+  <div class="previews">
+    <div class="pane" *ngIf="imgUrlA() as a">
+      <div class="stage">
+        <img #imgA [src]="a" alt="A" />
+        <canvas #canvasA></canvas>
+      </div>
+      <small>Reference</small>
+    </div>
+
+    <div class="pane" *ngIf="imgUrlB() as b">
+      <div class="stage">
+        <img #imgB [src]="b" alt="B" />
+        <canvas #canvasB></canvas>
+      </div>
+      <small>Group</small>
+    </div>
+  </div>
+
+  <button class="go" (click)="compare()">ตรวจสอบใบหน้าของท่านจากรูป Profile</button>
+
+  <div class="result" *ngIf="status() !== 'idle'">
+    <p>{{ message() }}</p>
+    <!-- <p *ngIf="distance() !== null">
+      Closest distance: {{ distance() | number : '1.3-3' }} (threshold {{ threshold }})
+    </p> -->
+  </div>
+</div>

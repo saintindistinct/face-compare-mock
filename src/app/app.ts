@@ -1,12 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { CompareFaceComponent } from './compare-face/compare-face.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  standalone: true,
+  imports: [CompareFaceComponent],
+  template: `<app-compare-face />`,
 })
-export class App {
-  protected readonly title = signal('compare-face');
-}
+export class App {}

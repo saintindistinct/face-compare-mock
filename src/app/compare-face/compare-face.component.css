@@ -1,0 +1,89 @@
+/* .wrap {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 12px;
+}
+.inputs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+.previews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+.pane .stage {
+  position: relative;
+  width: 100%;
+}
+.pane img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.pane canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.go {
+  padding: 10px 16px;
+  font-weight: 600;
+}
+.result {
+  margin-top: 12px;
+  font-size: 1.1rem;
+} */
+
+.wrap {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 12px;
+}
+.inputs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+}
+.previews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+.pane .stage {
+  position: relative;
+  width: 100%;
+}
+.pane img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.pane canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.go {
+  padding: 10px 16px;
+  font-weight: 600;
+}
+.result {
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
